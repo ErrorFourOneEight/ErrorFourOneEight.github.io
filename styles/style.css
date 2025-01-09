@@ -1,0 +1,141 @@
+/* Dark Mode CSS */
+:root {
+    /* Primary colors */
+    --dark-blue: #010220;
+    --teal-blue: #1b1f58c5;
+    --navy-blue: #2B3A67;
+    --blue-gray: #496A81;
+    --soft-pink: #F5E3E0;
+
+    /* Text colors */
+    --text-primary: var(--soft-pink); /* Soft pink for text */
+    --text-secondary: var(--blue-gray); /* Blue-gray for secondary text */
+
+    /* Background colors */
+    --bg-primary: var(--dark-blue); /* Dark green for the main background */
+    --bg-secondary: var(--teal-blue); /* Teal green for sections/cards */
+    --bg-highlight: var(--navy-blue); /* Navy blue for highlights */
+
+    /* Accent colors */
+    --accent: var(--soft-pink); /* Soft pink for interactive elements */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+header, footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--navy-blue);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--blue-gray);
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    background-color: var(--bg-highlight);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+}
+
+input, textarea {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--blue-gray);
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+div.flatten{
+    text-align: center;  
+}
+
+
+p.categoryList{
+    white-space: pre-line;
+    height: 520px;
+    border-radius: 0px 25px 25px 25px;
+    border-width: 0;
+    padding-left:10px;
+    font-weight:500;
+    width: 435px;
+    background-color: var(--bg-secondary);
+
+    
+}
+p.rules{
+    white-space: pre-line;
+    height: 520px;
+    border-radius: 0px 25px 25px 25px;
+    border-width: 0;
+    padding-left:10px;
+    font-weight:500;
+    width: 435px;
+    margin: 10px;
+    padding-right: 10px;
+    background-color: var(--bg-secondary);
+    
+}
+
+h1.newCategory{
+    text-align: center;
+    height: 36px;
+    border-radius: 25px;
+    border-width: 2px;
+    height: 40px;
+    
+}
+
+h1.title{
+    text-align: center;
+    border-radius: 25px;
+    border-width: 2px;
+    font-size: 40px;
+    
+}
+div.flexContainer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}

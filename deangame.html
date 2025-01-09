@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Dean Game</title>
+  </head>
+  <body>
+    <h1 class="title">E418: The Dean Game</h1>
+    
+    <div class="flatten">
+        <button class="getCategory">Get a Category</button>
+        <button class="resetGame">Reset game</button>
+    </div>
+    <h1 class="newCategory">---</h1>
+
+    <div class="flexContainer">
+    <p class="categoryList">Categories:</p>
+    <p class="rules">Rules:<br>First, press the "Get a category" button to produce your first category. 
+      To the left you will see a letter and to the right will be the category itself. 
+      Each person must write down an answer starting with the letter given, making sure no-one else sees it. 
+      Repeat this for all 26 letters of the alphabet. Once all 26 have had a category, go through the categories again and award pointas follows:
+      - 3 point if the answer is correct and unique
+      - 1 point if the answer is correct but isn't unique
+      The person with the most points wins! 
+
+      Solo Mode &lpar;alternate game mode!&rpar;
+      Try to get through 26 of the categories without googling it. Its surprisingly hard when you get to the later letters!</p>
+    </div>
+    <div class="flatten">
+      <div id="debugTools" style="display:none">
+        <p>Debug:</p>
+        <button class="flatButton">Flatten</button>
+        <button class="loadButton">Load</button>
+        <button class="showButton">Show Loaded data</button>
+        <button class="updateButton">Update categories</button>
+      </div>
+    </div>
+    <script src="scripts/categories.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

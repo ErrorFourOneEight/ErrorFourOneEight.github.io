@@ -1,2 +1,73 @@
-Hello World!
-cheese
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>E418: Home</title>
+  </head>
+  <body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Your Name</h1>
+            <nav class="social-links">
+                <a href="https://github.com/ErrorFourOneEight" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- <a href="https://youtube.com/yourchannel" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/yourhandle" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a> -->
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a software developer passionate about building web applications,
+                creating content, and contributing to open source projects.
+            </p>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog">
+            <h2>Blog</h2>
+            <p>Here are some of my latest posts:</p>
+            <div id="markdown-container" class="markdown-container"></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lloyd Singleton. All rights reserved.</p>
+    </footer>
+
+    <!-- Marked.js for Markdown Rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script>
+        // Fetch Markdown file and render it
+        fetch('content/blog.md') // Replace with the path to your Markdown file
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Markdown file could not be fetched');
+                }
+                return response.text();
+            })
+            .then(markdown => {
+                const container = document.getElementById('markdown-container');
+                container.innerHTML = marked(markdown); // Render Markdown to HTML
+            })
+            .catch(error => {
+                console.error('Error loading Markdown file:', error);
+            });
+    </script>
+</body>
+
+</html>
