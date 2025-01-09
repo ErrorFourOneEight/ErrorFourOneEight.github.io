@@ -64,7 +64,7 @@
             })
             .then(markdown => {
                 const container = document.getElementById('markdown-container');
-                container.innerHTML = marked.parse(markdown); // Render Markdown to HTML
+                container.innerHTML = marked(markdown); // Render Markdown to HTML
             })
             .catch(error => {
                 console.error('Error loading Markdown file:', error);
