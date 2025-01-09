@@ -139,3 +139,22 @@ div.flexContainer{
     flex-wrap:wrap;
     justify-content:center;
 }
+
+.social-links {
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+.blog {
+    margin-top: 2rem;
+}
+
+.markdown-container {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 10px;
+}
