@@ -21,7 +21,10 @@
 }
 
 body {
-    margin: 0;
+    display: grid;
+    place-items: center; /* Center the column horizontally and vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margins */
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -157,4 +160,10 @@ div.flexContainer{
     background-color: var(--bg-secondary);
     padding: 1rem;
     border-radius: 10px;
+}
+
+.centered {
+    text-align: center;
+    width: 100%; /* Set the desired column width */
+    padding: 20px; /* Optional for spacing */
 }
